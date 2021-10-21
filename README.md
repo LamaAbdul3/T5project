@@ -31,28 +31,68 @@ Taking speed action (Ban, Blacklisting) after identifying addresses that have be
 
 
 4.Dataset Description
+
+
 Data Set Information
+
+
 A parsed dataset of the entire Bitcoin transaction graph from 2009 January to 2018 December. Using a time interval of 24 hours, and daily transactions. Ransomware addresses are taken from three widely adopted studies: Montreal, Princeton and Padua[1].
+
+
 Attribute Information
-Features Address: String. Bitcoin address. Year: Integer. Year. Day: Integer. Day of the year. 1 is the first day, 365 is the last day. Length: Integer. Weight: Float. Count: Integer. Looped: Integer.
+Features Address: String.
+
+Bitcoin address. 
+
+Year: Integer. Year. 
+
+Day: Integer. Day of the year. 1 is the first day, 365 is the last day.
+
+
+Length: Integer. 
+
+Weight: Float. 
+
+Count: Integer.
+
+Looped: Integer.
+
+
 Neighbors: Integer.
+
 Income: Integer. Satoshi amount (1 bitcoin = 100 million satoshis).
+
+
 Label: Category String. Name of the ransomware family (e.g., Cryptxxx, cryptolocker etc) or
 white (i.e., not known to be ransomware).
+
+
+
 5.Requierments
+
+
 Tools
+
 • Anaconda3
+
 • Jupyter Notebook
+
 • Python
+
 Libraries
+
 • Pandas for data analysis and manipulation.
+
 • Numpy for mathematical functions.
+
 • Matplotlib for data visualization.
+
 • Seaborn for data visualization.
+
 • Datetime for manipulating date and time.
-6.MVP
-A clean dataset after performing some EDA processes that is ready to use for the next step.
+
 7.Referneces
+
 [1] Archive.ics.uci.edu. 2021. UCI Machine Learning Repository:
 BitcoinHeistRansomwareAddressDataset Data Set. [online] Available at:
 <https://archive.ics.uci.edu/ml/datasets/BitcoinHeistRansomwareAddressDataset#> [Accessed 2
